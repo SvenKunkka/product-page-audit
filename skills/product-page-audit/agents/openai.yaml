@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Page Audit"
+  short_description: "Review product pages with evidence and clear coverage"
+  default_prompt: "Use $product-page-audit to review this product page against the supplied specifications and report verified issues."

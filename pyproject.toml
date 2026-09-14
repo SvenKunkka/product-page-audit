@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "product-page-audit"
+version = "0.1.0"
+description = "Evidence-based product page audits via CLI, Agent Skills, and MCP"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "SvenKunkka"}]
+dependencies = []
+
+[project.optional-dependencies]
+browser = ["playwright>=1.51,<2"]
+mcp = ["mcp>=1.20,<2"]
+dev = ["build>=1.2,<2"]
+
+[project.scripts]
+pdp-audit = "product_page_audit.cli:main"
+pdp-audit-mcp = "product_page_audit.mcp_server:main"
+
+[project.urls]
+Repository = "https://github.com/SvenKunkka/product-page-audit"
+Issues = "https://github.com/SvenKunkka/product-page-audit/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+product_page_audit = ["*.js"]

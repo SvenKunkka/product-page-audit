@@ -1,0 +1,13 @@
+{
+  "brand": "Example Devices",
+  "model": "Demo One",
+  "expected_specs": {
+    "Battery capacity": "2000 mAh",
+    "Connectivity": "Bluetooth 5.3"
+  },
+  "min_gallery_images": 2,
+  "max_image_kb": 750,
+  "exclusive_tag_dimensions": {
+    "connection": ["wired-only", "wireless"]
+  }
+}

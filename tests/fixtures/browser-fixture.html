@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unrendered fixture</title>
+<style>
+body {margin: 0; font: 16px/1.5 sans-serif;}
+main {padding: 12px;}
+img {width: 20px; height: 20px;}
+.hidden {display: none;}
+.space {height: 1300px;}
+.clipped {position: relative; overflow: hidden; width: 20px; height: 20px;}
+.clipped img {position: absolute; left: 100px;}
+@media (max-width: 500px) {#specifications table {display:none;} .mobile-wide {width:550px;}}
+</style></head><body><main>
+<h1>Rendered test product</h1><p class="mobile-wide">This block overflows only on mobile.</p>
+<img id="normal" src="/normal.svg" alt="Test product front">
+<img class="hidden" src="/hidden.svg">
+<div class="clipped"><img src="/clipped.svg" alt="Clipped image"></div>
+<img id="broken" src="/missing.png" alt="Missing product detail">
+<section id="specifications"><h2>Technical specifications</h2><table><tr><th>Weight</th><td>40 g</td></tr></table></section>
+<div class="space"></div><div id="lazy-target"></div>
+</main><script>
+document.title = "Rendered browser fixture";
+document.body.dataset.javascriptRan = "yes";
+fetch("/mutate", {method: "POST", body: "blocked"}).catch(() => {});
+window.addEventListener("scroll", () => {
+  if (scrollY > 100 && !document.getElementById("lazy-image")) {
+    const image = document.createElement("img");
+    image.id = "lazy-image"; image.src = "/lazy.svg"; image.alt = "Lazy loaded evidence";
+    document.getElementById("lazy-target").appendChild(image);
+  }
+});
+</script></body></html>

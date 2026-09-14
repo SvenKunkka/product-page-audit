@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo One | Example Devices</title>
+  <meta name="description" content="A fictional portable speaker used to demonstrate product page audits. This page is a local example and is not an offer for sale.">
+  <link rel="canonical" href="https://example.com/products/demo">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Demo One",
+    "brand": {"@type": "Brand", "name": "Example Devices"},
+    "sku": "DEMO-ONE-BLUE",
+    "image": "https://images.example.com/demo-one-front.webp",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://example.com/products/demo",
+      "price": "49.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Demo One</h1>
+    <p>Example Devices makes this fictional speaker solely for a software example.</p>
+    <p>Demo price: $49.00 USD. This is not an offer for sale.</p>
+    <section aria-label="Product gallery">
+      <!-- Intentional issue: useful product image has no alt attribute. -->
+      <img src="https://images.example.com/demo-one-front.webp" width="800" height="800">
+      <img src="https://images.example.com/demo-one-back.webp" alt="Demo One speaker viewed from the back" width="800" height="800">
+    </section>
+    <h2>Specifications</h2>
+    <table>
+      <tr><th>Model</th><td>Demo One</td></tr>
+      <tr><th>Battery capacity</th><td>2000 mAh</td></tr>
+      <tr><th>Connectivity</th><td>Bluetooth 5.3</td></tr>
+      <tr><th>SKU</th><td>DEMO-ONE-BLUE</td></tr>
+    </table>
+    <p>All values on this page are synthetic test data, not approved specifications for an actual product.</p>
+    <a href="https://example.com/support/demo-one">Example support destination</a>
+  </main>
+</body>
+</html>
