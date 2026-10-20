@@ -92,3 +92,10 @@ Skill 位于 [skills/product-page-audit](skills/product-page-audit)，可复制�
 ## 来源与许可
 
 本项目受用户提供的 `shopify-pdp-audit` 工作流程启发，重新编写了通用实现和公开检查规则。原包、原作者私有清单和本机配置不随仓库发布；详见 [来源说明](NOTICE.md)。本仓库的新代码和文档采用 [MIT 许可](LICENSE)。
+
+
+<!-- SVENKUNKKA-CONTACT:BEGIN -->
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-CONTACT:END -->

@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 # Product Page Audit
 
 [简体中文](README.zh-CN.md)
@@ -116,3 +120,30 @@ python -m unittest discover -s tests -v
 The base package uses Python's standard library. Browser and MCP dependencies are optional. The MCP extra uses the official Python SDK v1 (`mcp>=1.20,<2`).
 
 This is an independently written, generic implementation inspired by the workflow of a user-provided `shopify-pdp-audit` package. The original package and its private team checklist are not redistributed. See [NOTICE.md](NOTICE.md) for attribution and [LICENSE](LICENSE) for this repository's MIT license.
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+产品页证据采集与检查工具，以同一 Python 引擎提供命令行、Agent Skill 和本地 MCP 入口。支持通用 HTML 检查与 Shopify 公开商品数据检查，输出 JSON 和 Markdown 报告。
+
+**使用入口：** 按 [中文说明](README.zh-CN.md) 从源码安装；使用 `pdp-audit REAL_PRODUCT_URL --out reports` 检查页面，也可先运行仓库的离线示例。
+
+**范围说明：** 引擎无需 AI API 密钥；自动检查不等于人工规格审核或上线批准，目前未发布到 PyPI。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A product-page evidence and audit tool offering CLI, Agent Skill and local MCP entry points through one Python engine. It inspects generic HTML and public Shopify product data and writes JSON and Markdown reports.
+
+**Getting started:** Install from source using the instructions in the original README. Run `pdp-audit REAL_PRODUCT_URL --out reports`, or start with the bundled offline example.
+
+**Scope:** The engine needs no AI API key. Automated checks do not replace specification review or launch approval; the project is not published on PyPI.
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->
